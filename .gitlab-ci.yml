@@ -27,7 +27,6 @@ build-docker:
       --label "org.opencontainers.image.revision=$CI_COMMIT_SHA"
       --label "org.opencontainers.image.version=$CI_COMMIT_REF_NAME"
       --tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
-      -f docker/Dockerfile
       .
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
 
