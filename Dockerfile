@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-WORKDIR /urs/app/src/
+WORKDIR /usr/src/app
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
