@@ -5,8 +5,8 @@ WORKDIR /usr/src/app
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
-# Python
-RUN apt-get update && apt-get install -y build-essential git gzip brotli parallel --no-install-recommends && rm -rf /var/lib/apt/lists/*
+# Sys package
+RUN apt-get update && apt-get install -y build-essential git gzip brotli parallel ffmpeg --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 # Julia
 ENV JULIA_PATH /usr/local/julia/
