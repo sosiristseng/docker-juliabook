@@ -7,9 +7,5 @@ Docker file for building Jupyter-book with Julia kernels.
 
 ## Installed
 
-- `apt` packages: git, gzip, brotli, GNU parallel
-- Julia
-- Python
-  - jupyter-book
-  - matplotlib
-  - nbconvert
+- `docker-jupyterbook` ([GitHub](https://github.com/sosiristseng/docker-jupyterbook)) ([GitLab](https://gitlab.com/sosiristseng/docker-jupyterbook)) as the base image.
+- Julia and the `IJulia.jl` Jupyter kernel.
